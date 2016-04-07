@@ -1,6 +1,7 @@
 package com.example.abin.academicperformancecalulator;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -72,6 +73,16 @@ public class FaHomepage extends AppCompatActivity {
                 startActivity(i);
             }
         });
+        Button pdfdown=(Button)findViewById(R.id.buttonpdf);
+        pdfdown.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browser = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.URL)+"/doc.pdf"));
+                //Intent pdf=new Intent(FaHomepage.this,pdfdownload.class);
+                startActivity(browser);
+            }
+        });
+
     }
     public void onBackPressed() {
         this.finish();

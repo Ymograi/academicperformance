@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/AcademicPerformanceCalulator.iml" filepath="$PROJECT_DIR$/AcademicPerformanceCalulator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adbms.iml" filepath="$PROJECT_DIR$/adbms.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

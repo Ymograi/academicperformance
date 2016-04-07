@@ -23,23 +23,31 @@
         <activity
             android:name=".AddStudent1"
             android:screenOrientation="portrait" />
-        <activity android:name=".AddStudent2"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".FaHomepage"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".StudentHomepage"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".AddStudent3"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".CgpaConfirm"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".VerifyCgpa1"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".AddStudent2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FaHomepage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StudentHomepage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AddStudent3"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CgpaConfirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".VerifyCgpa1"
+            android:screenOrientation="portrait" />
         <activity android:name=".VerifyCgpa2" />
-        <activity android:name=".VerifiedStudents"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".ViewApi"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".VerifiedStudents"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ViewApi"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

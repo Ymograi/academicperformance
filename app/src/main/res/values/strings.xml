@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Academic Performance Calculator</string>
-    <string name="URL">http://192.168.0.107/adbms_api/</string>
+    <string name="URL">http://192.168.43.3/adbms_api/</string>
 </resources>
