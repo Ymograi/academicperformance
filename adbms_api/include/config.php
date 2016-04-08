@@ -5,7 +5,7 @@
  */
 define("DB_HOST", "localhost");
 define("DB_USER", "root");
-define("DB_PASSWORD", "root");
+define("DB_PASSWORD", "");
 define("DB_DATABASE","api_calculator");
 $mysqli=new mysqli(DB_HOST,DB_USER,DB_PASSWORD,DB_DATABASE) or die('Error connecting to database');
 //echo "config";

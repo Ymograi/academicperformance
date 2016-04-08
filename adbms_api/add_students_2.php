@@ -2,9 +2,9 @@
 //mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 //error_reporting(E_ALL); ini_set('display_errors', 1);
 //print_r($_POST);
-require_once "PHPMailer/PHPMailerAutoload.php";
-require_once "include/config.php";
-require_once 'include/db_functions.php';
+require_once "PHPMailer\PHPMailerAutoload.php";
+require_once "include\config.php";
+require_once 'include\db_functions.php';
 
 if(isset($_POST['name'])&&isset($_POST['roll'])&&isset($_POST['email'])
 	&&isset($_POST['dept'])&&isset($_POST['prog'])&&isset($_POST['year']))
