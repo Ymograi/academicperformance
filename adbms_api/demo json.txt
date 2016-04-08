@@ -1,0 +1,56 @@
+3.3.1 Registration
+
+URL: http://localhost/android_login_api/register.php
+
+PARAMS: name, email, password
+
+Registration success response
+{
+    "error": false,
+    "uid": "55fa7220a2c187.50984590",
+    "user": {
+        "name": "Ravi Tamada",
+        "email": "ravi@androidhive.info",
+        "created_at": "2015-09-17 13:26:16",
+        "updated_at": null
+    }
+}
+
+Registration error in storing
+{
+    "error": 1,
+    "error_msg": "Unknown error occurred in registration!"
+}
+
+Registration error – User Already Existed
+{
+    "success": 0,
+    "error": 2,
+    "error_msg": "User already existed with ravi8x@androidhive.info"
+}
+
+3.3.2 Login
+
+URL: http://localhost/android_login_api/login.php
+
+PARAMS: email, password
+
+Login Success
+{
+    "error": false,
+    "uid": "55fa7220a2c187.50984590",
+    "user": {
+        "name": "Ravi Tamada",
+        "email": "ravi@androidhive.info",
+        "created_at": "2015-09-17 13:26:16",
+        "updated_at": null
+    }
+}
+
+Login error – Incorrect username / password
+{
+    "tag": "login",
+    "success": 0,
+    "error": 1,
+    "error_msg": "Login credentials are incorrect. Please try again!"
+}

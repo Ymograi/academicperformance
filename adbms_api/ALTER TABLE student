@@ -1,0 +1,23 @@
+ALTER TABLE student
+MODIFY roll_no varchar(20) NOT NULL,
+MODIFY password varchar(50) NOT NULL,
+MODIFY name varchar(50) NOT NULL,
+MODIFY email_id varchar(50) NOT NULL,
+MODIFY department varchar(20) NOT NULL,
+MODIFY programme varchar(20) NOT NULL,
+MODIFY year year(4) NOT NULL
+
+
+ALTER TABLE faculty_advisor
+MODIFY username varchar(20) NOT NULL,
+MODIFY password varchar(50) NOT NULL,
+MODIFY name varchar(50) NOT NULL,
+MODIFY email varchar(50) NOT NULL,
+MODIFY programme varchar(20) NOT NULL,
+MODIFY year year(4) NOT NULL
+
+
+ALTER TABLE academic_performance
+MODIFY department varchar(20) NOT NULL,
+MODIFY programme varchar(20) NOT NULL,
+MODIFY year year(4) NOT NULL
