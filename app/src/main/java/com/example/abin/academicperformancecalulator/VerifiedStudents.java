@@ -78,18 +78,14 @@ public class VerifiedStudents extends AppCompatActivity {
                         roll.setFilters(new InputFilter[]{new InputFilter.LengthFilter(10)});
                         TextView name=new TextView(VerifiedStudents.this);
                         TextView cgpa=new TextView(VerifiedStudents.this);
-                        //RadioGroup zo=new RadioGroup(verified_students.this);
+
 //                        Toast.makeText(VerifyCgpa1.this,"After views initialised",Toast.LENGTH_LONG).show();
-                        //zo.setOrientation(LinearLayout.HORIZONTAL);
+
                         LinearLayout.LayoutParams Params1 = new LinearLayout.LayoutParams(190,45);
                         LinearLayout.LayoutParams Params2 = new LinearLayout.LayoutParams(190,45);
                         roll.setLayoutParams(Params1);
                         cgpa.setLayoutParams(Params2);
                         name.setLayoutParams(Params2);
-                        //RadioButton zero = new RadioButton(verified_students.this);
-                        //zero.setText("Invalid");
-
-                        //name.setPadding(10, 10, 0, 0);
                         roll.setPadding(10, 10, 0, 0);
                         name.setPadding(0, 0, 0, 0);
                         cgpa.setPadding(50, 0, 0, 0);
@@ -98,27 +94,20 @@ public class VerifiedStudents extends AppCompatActivity {
                         name.setText(nameText);
                         cgpa.setText(cgpaText);
 
-                        //RadioButton one = new RadioButton(verified_students.this);
-                        //one.setId();
-                        //one.setText("Valid");
-                       // zo.addView(zero);
 //                        Toast.makeText(VerifyCgpa1.this,"After zero add",Toast.LENGTH_LONG).show();
-                        //zo.addView(one);
-                        //zo.check(zero.getId());
+
 //                        Toast.makeText(VerifyCgpa1.this,"After one add",Toast.LENGTH_LONG).show();
 //                        Toast.makeText(VerifyCgpa1.this,"After zo add",Toast.LENGTH_LONG).show();
                         stud.addView(name);
                         stud.addView(roll);
 //                        Toast.makeText(VerifyCgpa1.this,"After roll add",Toast.LENGTH_LONG).show();
-                        //stud.addView(name);
                         stud.addView(cgpa);
 //                        Toast.makeText(VerifyCgpa1.this,"After num add", Toast.LENGTH_LONG).show();
-                        //stud.addView(zo);
+
                         root.addView(stud);
                         rolls[i]=roll;
                         names[i]=name;
                         cgpas[i]=cgpa;
-                        //rad[i]=zo;
                     }
 
                 }

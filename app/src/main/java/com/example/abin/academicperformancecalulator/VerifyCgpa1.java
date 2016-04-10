@@ -56,13 +56,8 @@ public class VerifyCgpa1 extends AppCompatActivity {
                     String res = "";
                     if(nos!=0) {
                         res = resultJSONStr.getString("students");
-
-                        //res = res.substring(1,res.length()-1);
                         //Toast.makeText(VerifyCgpa1.this, res, Toast.LENGTH_SHORT).show();
-                        // Toast.makeText(VerifyCgpa1.this, "hello sir", Toast.LENGTH_SHORT).show()
                         JSONArray students = new JSONArray(res);
-//                    end=res.lastIndexOf("}"+1);
-//                    start=res.indexOf("{");
 //                    Toast.makeText(VerifyCgpa1.this, "After JSON array", Toast.LENGTH_SHORT).show();
 
 
@@ -98,9 +93,7 @@ public class VerifyCgpa1 extends AppCompatActivity {
                             RadioButton zero = new RadioButton(VerifyCgpa1.this);
                             zero.setText("Invalid");
 
-                            //name.setPadding(10, 10, 0, 0);
                             roll.setPadding(10, 10, 0, 0);
-                            //name.setPadding(15, 15, 15, 15);
                             cgpa.setPadding(20, 0, 0, 0);
                             zo.setPadding(10, 0, 0, 0);
                             roll.setText(rollText);
@@ -108,7 +101,6 @@ public class VerifyCgpa1 extends AppCompatActivity {
                             cgpa.setText(cgpaText);
 
                             RadioButton one = new RadioButton(VerifyCgpa1.this);
-                            //one.setId();
                             one.setText("Valid");
                             zo.addView(zero);
 //                        Toast.makeText(VerifyCgpa1.this,"After zero add",Toast.LENGTH_LONG).show();
@@ -124,7 +116,6 @@ public class VerifyCgpa1 extends AppCompatActivity {
                             stud.addView(zo);
                             root.addView(stud);
                             rolls[i] = roll;
-                            //names[i]=name;
                             cgpas[i] = cgpa;
                             rad[i] = zo;
                         }

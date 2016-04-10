@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                             try{
 //                                Toast.makeText(MainActivity.this, "Inside call.enqueue", Toast.LENGTH_SHORT).show();
                                 String result = response.body().string();
-                                Toast.makeText(MainActivity.this, result, Toast.LENGTH_SHORT).show();
+//                                Toast.makeText(MainActivity.this, result, Toast.LENGTH_SHORT).show();
                                 int end = result.lastIndexOf("}")+1;
                                 int start = result.indexOf("{");
                                 result = result.substring(start,end);
