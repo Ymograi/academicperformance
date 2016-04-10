@@ -121,6 +121,13 @@ public class AddStudent2 extends AppCompatActivity {
                                 valid = false;
                                 emails[i].setError("Enter a valid email address.");
                             }
+
+                            Pattern rollPat = Pattern.compile("(^[MB]\\d{6}[\\w]{2}$)");
+
+                            if(!rollPat.matcher(rolls[i].getText()).matches()){
+                                valid = false;
+                                rolls[i].setError("Enter a valid roll no.");
+                            }
                             if (valid) {
                                 //Atleast 1 entry is valid
                                 valid2[0] = true;
@@ -153,7 +160,7 @@ public class AddStudent2 extends AppCompatActivity {
                             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                                 try{
                                     String result = response.body().string();
-                                    Toast.makeText(AddStudent2.this, result, Toast.LENGTH_LONG).show();
+//                                    Toast.makeText(AddStudent2.this, result, Toast.LENGTH_LONG).show();
                                     int end = result.lastIndexOf("}")+1;
                                     int start = result.indexOf("{");
                                     result = result.substring(start,end);

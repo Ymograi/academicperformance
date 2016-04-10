@@ -86,7 +86,7 @@ public class StudentHomepage extends AppCompatActivity {
                                     result = result.substring(start, end);
                                     JSONObject resultJSONStr = new JSONObject(result);
                                     String errorCode = resultJSONStr.getString("error");
-                                    Toast.makeText(StudentHomepage.this, result, Toast.LENGTH_SHORT).show();
+//                                    Toast.makeText(StudentHomepage.this, result, Toast.LENGTH_SHORT).show();
                                     if(errorCode.equalsIgnoreCase("FALSE")){
                                         String rollResponse = resultJSONStr.getString("roll_no");
                                         double cgpaResponse = resultJSONStr.getDouble("cgpa");

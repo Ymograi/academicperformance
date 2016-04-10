@@ -30,13 +30,13 @@ public class Pdfmaildown extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdfmaildown);
-        final String user=getIntent().getStringExtra("username");
+        final String user = getIntent().getStringExtra("username");
         final String prog = getIntent().getStringExtra("prog");
         final String year = getIntent().getStringExtra("year");
         final String dept = getIntent().getStringExtra("dept");
         final EditText ema=(EditText)findViewById(R.id.sendemail);
         TextView fa=(TextView)findViewById(R.id.fa);
-        fa.setText("Welcome Faculty Advisor, "+user);
+        fa.setText("Welcome Faculty Advisor, " + user);
         final TextView fin = (TextView) findViewById(R.id.Fin);
 
         Button send=(Button)findViewById(R.id.button);
@@ -57,7 +57,7 @@ public class Pdfmaildown extends AppCompatActivity {
                     public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                         try {
                             String result = response.body().string();
-                                    Toast.makeText(Pdfmaildown.this, result, Toast.LENGTH_LONG).show();
+//                            Toast.makeText(Pdfmaildown.this, result, Toast.LENGTH_LONG).show();
                             int end = result.lastIndexOf("}") + 1;
                             int start = result.indexOf("{");
                             result = result.substring(start, end);
@@ -66,11 +66,12 @@ public class Pdfmaildown extends AppCompatActivity {
                             String errorCode = resultJSONStr.getString("error");
 //                                    Toast.makeText(AddStudent2.this, result, Toast.LENGTH_SHORT).show();
                             if (errorCode.equalsIgnoreCase("FALSE")) {
-                                if(!em.equals(""))
-                                {String as = "The Email has been Sent to " +em + " .Thank you, " + user+".";
-                                fin.setText(as);}
+                                if(!em.equals("")) {
+                                    String as = "The email has been sent to " + em + ". Thank you, " + user + ".";
+                                    fin.setText(as);
+                                }
                                 else{
-                                    fin.setText("The Pdf File has been Downloaded.");
+                                    fin.setText("The PDF file has been downloaded.");
                                 }
                                 Intent browser = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.URL) + "/doc.pdf"));
                                 startActivity(browser);
@@ -78,7 +79,8 @@ public class Pdfmaildown extends AppCompatActivity {
                             } else {
                                 Toast.makeText(Pdfmaildown.this, resultJSONStr.getString("error_msg"), Toast.LENGTH_SHORT).show();
                             }
-                        } catch (Exception e) {
+                        }
+                        catch (Exception e) {
                             Toast.makeText(Pdfmaildown.this, e.toString(), Toast.LENGTH_SHORT).show();
                         }
 
@@ -86,12 +88,13 @@ public class Pdfmaildown extends AppCompatActivity {
 
                     @Override
                     public void onFailure(Call<ResponseBody> call, Throwable t) {
-
+                        Toast.makeText(Pdfmaildown.this, t.toString(), Toast.LENGTH_SHORT).show();
                     }
                 });
             }
-            else
-                {ema.setError("Please Enter a Valid Email or Leave it Blank to download the file");}
+            else {
+                    ema.setError("Please Enter a Valid Email or Leave it Blank to download the file");
+                }
             }
             });
     }

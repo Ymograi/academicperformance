@@ -3,9 +3,9 @@ $response=array("error"=>FALSE);
 //mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 //error_reporting(E_ALL); ini_set('display_errors', 1);
 //print_r($_POST);
-require_once 'fpdf/fpdf.php';
-require_once 'include/config.php';
-require_once 'include/db_functions.php';
+require_once 'fpdf\fpdf.php';
+require_once 'include\config.php';
+require_once 'include\db_functions.php';
 
 if(!isset($_POST["dept"])&&!isset($_POST["prog"])&&!isset($_POST["year"]))
 { $pdf=new FPDF();

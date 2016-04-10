@@ -1,6 +1,6 @@
 <?php
-require_once 'include/db_functions.php';
-
+require_once 'include\db_functions.php';
+require_once 'include\config.php';
 //JSON response array
 $response=array("error"=>FALSE);
 

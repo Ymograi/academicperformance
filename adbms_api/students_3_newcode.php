@@ -2,9 +2,9 @@
 //mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 error_reporting(E_ALL); ini_set('display_errors', 1);
 print_r($_POST);
-require_once "PHPMailer/PHPMailerAutoload.php";
-require_once 'include/config.php';
-require_once 'include/db_functions.php';
+require_once "PHPMailer\PHPMailerAutoload.php";
+require_once 'include\config.php';
+require_once 'include\db_functions.php';
 			// $mail = new PHPMailer;
 			// $mail->SMTPDebug = -3; //Enable SMTP debugging if <0 will show each and everything happening.
 			// $mail->isSMTP();//Set PHPMailer to use SMTP
