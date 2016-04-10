@@ -48,6 +48,7 @@
         <activity
             android:name=".ViewApi"
             android:screenOrientation="portrait" />
+        <activity android:name=".Pdfmaildown"></activity>
     </application>
 
 </manifest>

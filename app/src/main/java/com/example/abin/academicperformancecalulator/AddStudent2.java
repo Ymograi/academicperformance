@@ -153,7 +153,7 @@ public class AddStudent2 extends AppCompatActivity {
                             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
                                 try{
                                     String result = response.body().string();
-//                                    Toast.makeText(AddStudent2.this, result, Toast.LENGTH_LONG).show();
+                                    Toast.makeText(AddStudent2.this, result, Toast.LENGTH_LONG).show();
                                     int end = result.lastIndexOf("}")+1;
                                     int start = result.indexOf("{");
                                     result = result.substring(start,end);
@@ -235,7 +235,7 @@ public class AddStudent2 extends AppCompatActivity {
 
 interface AddStudents{
     @FormUrlEncoded
-    @POST("add_students_3.php")
+    @POST("students_3_newcode.php")
     Call<ResponseBody> getData(@Field("name[]") String name_text[],@Field("roll[]") String roll_text[], @Field("email[]") String email[],
                                @Field("dept") String dept, @Field("prog") String prog, @Field("year") String year);
 }

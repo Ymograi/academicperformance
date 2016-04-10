@@ -13,9 +13,10 @@ if(!isset($_POST["dept"])&&!isset($_POST["prog"])&&!isset($_POST["year"]))
 	// $dept=$_POST["dept"];
 	// $prog=$_POST["prog"];
 	// $year=$_POST["year"];
-	$dept="CSED";//$_POST["dept"];
-	$prog="MCA";//$_POST["prog"];
-	$year="2014";//$_POST["year"];
+
+	 $dept="CSED";//$_POST["dept"];
+	 $prog="MCA";//$_POST["prog"];
+	 $year="2014";//$_POST["year"];
 	$stmp="select roll_no,name,email,cgpa,department,programme,year from student where department='$dept' and programme='$prog' and year='$year' and valid=1 and cgpa IS NOT NULL ORDER BY cgpa DESC; ";
   $result=$mysqli->query($stmp);
 	$info=$result->fetch_fields();
@@ -44,6 +45,14 @@ if(!isset($_POST["dept"])&&!isset($_POST["prog"])&&!isset($_POST["year"]))
 			$pdf->Cell(10,12,$val[6],1);
 		}
 $content=$pdf->Output('doc.pdf','F');
-echo $_SERVER['SERVER_NAME'];
+
+$response["error"] = "FALSE";
+echo json_encode($response);
+}
+
+else{
+	$response['error']=TRUE;
+	$response['error_msg']="Required parameters are missing.";
+	echo json_encode($response);
 }
 ?>

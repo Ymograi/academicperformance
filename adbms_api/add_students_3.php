@@ -2,9 +2,9 @@
 //mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 //error_reporting(E_ALL); ini_set('display_errors', 1);
 //print_r($_POST);
-require_once "PHPMailer\PHPMailerAutoload.php";
-require_once 'include\config.php';
-require_once 'include\db_functions.php';
+require_once "PHPMailer/PHPMailerAutoload.php";
+require_once 'include/config.php';
+require_once 'include/db_functions.php';
 			$mail = new PHPMailer;
 			$mail->SMTPDebug = -3; //Enable SMTP debugging if <0 will show each and everything happening.
 			$mail->isSMTP();//Set PHPMailer to use SMTP
@@ -16,7 +16,7 @@ require_once 'include\db_functions.php';
 			$mail->Port = 587;//Set TCP port to connect to Mail Details
 			$mail->From = "nitcadmin@nitc.ac.in";
 			$mail->FromName = "Nitc Admin";
-			$mail->isHTML(FALSE);
+			$mail->isHTML(TRUE);
 			$mail->Subject = "Request to Enter CGPA";
 			$mail->Body = "<b>Hello You are requested to download the android app from the given link:<a href=</a> and login. The username and password are your roll numbers.</b><br>";
 			$mail->AltBody = "";

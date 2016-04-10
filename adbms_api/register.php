@@ -3,7 +3,7 @@ error_reporting(E_ALL); ini_set('display_errors', 1);
 //print_r($_POST);
 //Registration endpoint to communiate between app and DB
 //echo "here";
-require_once 'include\db_functions.php';
+require_once 'include/db_functions.php';
 //require_once 'include/db_connect.php';
 
 //JSON response array
