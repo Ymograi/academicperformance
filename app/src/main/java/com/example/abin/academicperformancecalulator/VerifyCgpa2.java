@@ -23,9 +23,6 @@ public class VerifyCgpa2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_verify_cgpa2);
-
-//        final TextView message = (TextView) findViewById(R.id.message);
-
         String rolls[] = getIntent().getStringArrayExtra("rolls");
         int valid[] = getIntent().getIntArrayExtra("valid");
 
