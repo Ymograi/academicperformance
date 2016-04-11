@@ -1,3 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="C:\Users\Abin\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.4\695b63d702f505b9b916e02272e3b6381bade7f\gson-2.4.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="0695b63d702f505b9b916e02272e3b6381bade7f">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.4_0c6526215744423bcee1345e000b896e04a87816\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\libs\internal_impl-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.1.1_e77fbda7e019299781f7bb5cd15d09d9a1b527a1\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.1.1_63cb15ea743f32d134c0a6c9c1840516b3e0febc\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="a210939a489f496ff521b1db4c4be0d6a914c108">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_2b7bb973ca123443cfe51f5b89418d4de1a12694\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.6.0_b9632078aef18e570f989cd9b405b6828c8c339f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.0.0-beta4\739e00dea1f0ac04fdb9b6160d667e23cc50a791\retrofit-2.0.0-beta4.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="739e00dea1f0ac04fdb9b6160d667e23cc50a791">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.0.0-beta4_3bd748d989e5c628d501c32d1e4b77b8cbca5fed\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.0.0-beta4\de5935a367ba5e343e9df786ac8fc0c7d52b5f0c\converter-gson-2.0.0-beta4.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="de5935a367ba5e343e9df786ac8fc0c7d52b5f0c">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.0.0-beta4_f3f484a7f750164176602e1f1b8c11d4d83c7c11\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="595deab86eaa1be7c92d429a79a8d0fb21d8c118">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_22d0447b6ef80a371b5acd2d22368661b00da66e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.1.1\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="5c5699834e9722f1c288fea2de82725d078ba127">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.1.1_01dc086c19a7a6a298072abf1bb960974b3e5318\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.0.1\b34c1f2d993044656e87f88970b6818e99e886ba\okhttp-3.0.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b34c1f2d993044656e87f88970b6818e99e886ba">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.0.1_74cbd9b88f1191becdc93f3a0d058de31aa9063d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Abin\AppData\Local\Android\sdk1\extras\android\m2repository\com\android\support\support-annotations\23.1.1\support-annotations-23.1.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="C:\Users\Abin\AndroidStudioProjects\AcademicPerformanceCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.1.1_6559ddac46436d4f5d3f8216f379858a61eeb057\classes.dex" />
+    </item>
+
+</items>
